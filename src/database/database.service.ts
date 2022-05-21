@@ -4,14 +4,11 @@ import { Student } from '../dto/student';
 
 @Injectable()
 export class Database {
+  // Array of students stored in the database
   students = [];
   
   constructor() {
     this.students.push(MockStudent);
-  }
-  
-  getHello(): string {
-    return 'Welcome to the pbp-technical-assessment!';
   }
 
   /**
