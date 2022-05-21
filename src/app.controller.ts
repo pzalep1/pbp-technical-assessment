@@ -1,22 +1,39 @@
-import { Body, Controller, Get, Param, Post } from '@nestjs/common';
-import { AppService } from './app.service';
+import { Body, Controller, Get, Param, Post, Patch, Delete } from '@nestjs/common';
+import { Database } from './database/database.service';
+import { Student } from './dto/student';
+import { StudentWriteDto } from './dto/studentWrite';
 
 @Controller()
 export class AppController {
-  constructor(private readonly appService: AppService) {}
+  constructor(private readonly database: Database) {}
 
   @Get()
   getHello(): string {
-    return this.appService.getHello();
+    return this.database.getHello();
   }
 
   @Get('students')
-  getStudents(): any {
-    return this.appService.getStudents();
+  getStudents(): Student[] {
+    return this.database.getStudents();
+  }
+
+  @Get('students/:id')
+  getStudent(@Param('id') id: string): Student {
+    return;
   }
 
   @Post('students')
-  createStudent(@Body('student') student: any) {
-    return this.appService.createStudent(student);
+  createStudent(@Body('student') student: StudentWriteDto): Student {
+    return;
+  }
+
+  @Patch('students/:id')
+  updateStudent(@Body('student') student: Partial<StudentWriteDto>, @Param('id') id: string): void {
+    return;
+  }
+
+  @Delete('students/:id')
+  deleteStudent(@Param('id') id: string): void {
+    return;
   }
 }
