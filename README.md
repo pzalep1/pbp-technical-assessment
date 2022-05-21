@@ -23,7 +23,7 @@
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
 ## Description
-This repository is a technical assessment for Products By Paige. It is built using the [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository. This application is a simple CRUD application for a Student database. You can find the tasks for this technical assessment in the wiki of this repository. Please follow the below instructions to start the application. 
+This repository is a technical assessment for Products By Paige. It is built using the [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository. This application is a simple CRUD application for a Student database. You can find the tasks for this technical assessment in the wiki of this repository. Please follow the below instructions to start the application. You can find a First Steps to NestJS [here](https://docs.nestjs.com/first-steps).
 
 ## Installation
 
