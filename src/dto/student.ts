@@ -5,14 +5,12 @@ export class Student {
     name: string;
     major: string;
     department: string;
-    birthday: string;
 
     constructor(student: any) {
         this.id = student.id;
         this.name = student.name;
         this.major = student.major;
         this.department = student.department;
-        this.birthday = student.birthday;
     }
 
     /**
@@ -29,9 +27,6 @@ export class Student {
         }
         if (args.department) {
             this.department = args.department;
-        }
-        if (args.birthday) {
-            this.birthday = args.birthday;
         }
     }
 }
